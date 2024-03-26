@@ -682,3 +682,18 @@ color: #f39c12;
 transition:.3s ease all;
 }
 }
+#about {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #20242FFF; /* Navy Blue */
+    border-radius: 5px;
+  }
+  
+  #about h2 {
+    color: #FFFF00FF; /* Yellow */
+  }
+  
+  #about p {
+    color: #FFFFFF; /* White */
+  }
+  
