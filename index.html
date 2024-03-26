@@ -6,14 +6,14 @@ Issues: https://github.com/slymp3/Pixel-Portfolio-Webite/issues
 Description: This file contains all structure of my portfolio page
 -->
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>RuneSprites | Plumber
-  </title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RuneSprites | Plumber</title>
   <meta name="description" content="RuneSprites is a digital art collection featuring 2007 unique Ordinal NFTs (non-fungible tokens) inscribed on the Bitcoin blockchain, artistically inspired by the nostalgic armor, items, and characters from the game RuneScape.">
   <meta name="author" content="RuneSprites">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <!-- Social Media Sharing Meta Tags -->
   <meta property="og:title" content="RuneSprites | Plumber">
   <meta property="og:description" content="RuneSprites is a digital art collection featuring 2007 unique Ordinal NFTs (non-fungible tokens) inscribed on the Bitcoin blockchain, artistically inspired by the nostalgic armor, items, and characters from the game RuneScape.">
@@ -23,17 +23,26 @@ Description: This file contains all structure of my portfolio page
   <meta name="twitter:description" content="RuneSprites is a digital art collection featuring 2007 unique Ordinal NFTs (non-fungible tokens) inscribed on the Bitcoin blockchain, artistically inspired by the nostalgic armor, items, and characters from the game RuneScape.">
   <meta name="twitter:image" content="https://runesprites.com/assets/img/social-share.png">
   
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- External Stylesheets -->
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/effects.css">
   <link rel="stylesheet" href="assets/css/retro.css">
+  
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  
+  <!-- Internal Styles -->
   <style>
     /* Custom RuneSprite styles */
     /* Text color palette */
-    h1, h2, h3, h4, h5, h6, p, a {
+    body {
+      font-family: 'Press Start 2P', cursive; /* Use Google Font for RuneScape theme */
       color: #FFFF00FF; /* Yellow */
+      background-color: #363C4CFF; /* Dark Gray */
+    }
+    h1, h2, h3, h4, h5, h6, p, a {
+      color: #363C4CFF; /* Dark Gray */
     }
     .heading {
       color: #20242FFF; /* Navy Blue */
@@ -44,29 +53,45 @@ Description: This file contains all structure of my portfolio page
     .btn {
       background-color: #4D5A7CFF; /* Slate Gray */
     }
+
+    /* Animation Effects */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .fadeIn {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      /* Adjust styles for smaller devices */
+    }
   </style>
 </head>
 <body>
-  <section id="top" class="hero">
+  <header>
+    <!-- Navigation bar or logo -->
+  </header>
+
+  <section id="top" class="hero fadeIn">
     <!-- Hero Section Content -->
   </section>
   
-  <section id="about">
+  <section id="about" class="fadeIn">
     <h2 class="heading">About RuneSprites</h2>
     <p>RuneSprites is a digital art collection featuring 2007 unique Ordinal NFTs (non-fungible tokens) inscribed on the Bitcoin blockchain. Each RuneSprite draws inspiration from the nostalgic armor, items, and characters found in the iconic game RuneScape. Born out of a profound admiration for RuneScape's legacy, our mission is to immortalize its essence through meticulously crafted sprite characters.</p>
     <p>Every RuneSprite is a unique representation, intricately woven into the fabric of the Bitcoin blockchain. With its fusion of nostalgic charm and blockchain technology, RuneSprites offers collectors a timeless treasure that will endure forever. Each collectible features its own distinct blend of backgrounds, colors, and items, making it a rare and coveted digital masterpiece.</p>
     <p>These RuneSprites are powered by Bitcoin and are inscribed on the blockchain, ensuring their authenticity and permanence. Featuring procedurally generated art, they encapsulate early 2000's video game nostalgia, evoking fond memories for fans of RuneScape while offering a new dimension of digital art appreciation.</p>
-</section>
+  </section>
 
-  
-  <section id="gallery">
+  <section id="gallery" class="fadeIn">
     <h2 class="heading">Gallery</h2>
     <!-- Gallery content here -->
   </section>
   
-  <section id="faq">
+  <section id="faq" class="fadeIn">
     <h2 class="heading">Frequently Asked Questions (FAQ)</h2>
-    
     <div class="faq-item">
       <h3>What are RuneSprites?</h3>
       <p>RuneSprites is a collection of RuneScape-inspired Ordinals inscriptions hosted on the Bitcoin blockchain. With a deep-rooted love for RuneScape, RuneSprites aims to immortalize its essence through meticulously crafted sprite characters. The collection contains 2007 randomly computer-generated RuneSprites.</p>
@@ -104,8 +129,7 @@ Description: This file contains all structure of my portfolio page
       <p>RuneSprites can be freely transferred among Bitcoin Ordinals wallets. Once the project is fully inscribed, you can buy and sell RuneSprites on Ordinals marketplaces such as MagicEden or Ordinals Wallet. RuneSprites.com does not provide a marketplace for RuneSprites, and we have no control over users creating secondary markets for RuneSprites on third-party websites.</p>
     </div>
   </section>
-  
-  
+
   <footer>
     <div class="mobile">
       <div class="social-mob">
@@ -126,6 +150,7 @@ Description: This file contains all structure of my portfolio page
     <!-- Additional footer content -->
   </footer>  
   
+  <!-- External JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 </html>
