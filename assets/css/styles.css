@@ -58,7 +58,7 @@ width: 50px;
 left: 0;
 right: 0;
 margin: 0 auto;
-background: #db8e35;
+background: #F5F5F5;
 }
 .btn {
 color:inherit;
@@ -366,7 +366,7 @@ padding: 50px 15px;
 /*Blue Just in case*/
 /*background:#3498db;*/
 /*Orange (alt. #ffa500)*/
-background: #f39c12;
+background: #F5F5F5;
 text-align: center;
 background-image: url("../../assets/img/contact_us.jpg");
 }
@@ -448,7 +448,7 @@ color: #000;
 font-size: 20px;
 }
 .up-arrow a:hover {
-color: #f39c12;
+color: #F5F5F5;
 text-shadow: 2px 2px 4px rgba(128, 49, 0, 0.3);
 }
 .love {
@@ -678,7 +678,7 @@ padding: 10px;
 display: inline-block;
 }
 .social-mob a:hover {
-color: #f39c12;
+color: #F5F5F5;
 transition:.3s ease all;
 }
 }
