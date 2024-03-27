@@ -732,29 +732,24 @@ footer p {
 }
 
 
-/* Center the image horizontally */
-#top {
-  text-align: center;
+/* Style for the clickable image container */
+#container {
+  position: absolute; /* Position it absolutely */
+  top: 20px; /* Adjust top position as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 9999; /* Ensure it appears on top of other content */
 }
 
-/* Position the clickable image */
-.clickable-image {
-  position: absolute;
-  top: 50%; /* Adjust as needed */
-  left: 50%; /* Adjust as needed */
-  transform: translate(-50%, -50%);
-  z-index: 1; /* Ensure it's above the background image */
-}
-
-/* Center the image horizontally */
-.clickable-image img {
+/* Style for the clickable image */
+#clickableImage img {
   display: block;
-  margin: 0 auto;
+  width: 200px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.clickable-image {
-  position: relative;
-}
+/* Additional styling for other elements if needed */
+
 
 .clickable-image:hover::after {
   content: '';
