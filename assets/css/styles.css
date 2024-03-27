@@ -726,3 +726,12 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+footer {
+  color: #FFFF00FF !important; /* Yellow */
+}
+
+/* Center the image horizontally */
+#top {
+  text-align: center;
+}
