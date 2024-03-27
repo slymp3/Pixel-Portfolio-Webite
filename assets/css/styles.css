@@ -750,3 +750,28 @@ footer {
   display: block;
   margin: 0 auto;
 }
+
+.clickable-image {
+  position: relative;
+}
+
+.clickable-image:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), transparent);
+}
+
+/* Section Titles Shine Effect */
+.heading:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Initially Hide Gallery and FAQ Sections */
+#galleryContent,
+#faqContent {
+  display: none;
+}
