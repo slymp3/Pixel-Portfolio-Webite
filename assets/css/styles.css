@@ -719,3 +719,10 @@ transition:.3s ease all;
 .clickable-image a:hover img {
   transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
+
+footer {
+  background-color: #4D5A7CFF; /* Slate Gray */
+  color: #FFFF00FF; /* Yellow */
+  padding: 20px;
+  text-align: center;
+}
