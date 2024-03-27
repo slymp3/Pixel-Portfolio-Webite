@@ -722,16 +722,31 @@ transition:.3s ease all;
 
 footer {
   background-color: #4D5A7CFF; /* Slate Gray */
-  color: #FFFF00FF; /* Yellow */
+  color: #FFFF00; /* Yellow */
   padding: 20px;
   text-align: center;
 }
 
 footer {
-  color: #FFFF00FF !important; /* Yellow */
+  color: #FFFF00 !important; /* Yellow */
 }
 
 /* Center the image horizontally */
 #top {
   text-align: center;
+}
+
+/* Position the clickable image */
+.clickable-image {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure it's above the background image */
+}
+
+/* Center the image horizontally */
+.clickable-image img {
+  display: block;
+  margin: 0 auto;
 }
