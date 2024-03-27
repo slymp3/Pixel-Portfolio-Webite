@@ -199,23 +199,14 @@ Description: This file contains all structure of my portfolio page
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
   </script>
   <script>
-    // Ensure all section content starts hidden
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('section div').forEach(function(div) {
-        div.style.display = 'none';
-      });
-    });
+// Toggle section visibility
+function toggleSection(sectionId) {
+    var content = document.getElementById(sectionId + 'Content');
+    content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+}
 
-    // Toggle section visibility
-    function toggleSection(sectionId) {
-      var content = document.getElementById(sectionId + 'Content');
-      if (content.style.display === 'none' || content.style.display === '') {
-        content.style.display = 'block';
-      } else {
-        content.style.display = 'none';
-      }
-    }
   </script>
+  
 </body>
 </html>
 

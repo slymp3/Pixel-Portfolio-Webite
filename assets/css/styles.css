@@ -771,12 +771,25 @@ footer p {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-/* Initially Hide Gallery and FAQ Sections */
+#aboutContent,
 #galleryContent,
 #faqContent {
-  display: none;
+    display: none; /* Initially hide section content */
 }
-/* Initially hide section content except for the About section */
-#gallery, #faq {
-  display: none;
+
+#aboutContent,
+#galleryContent,
+#faqContent {
+    margin-top: 10px; /* Optional: Adjust the spacing */
 }
+
+h2 {
+    cursor: pointer; /* Make the titles clickable */
+}
+
+#about h2,
+#gallery h2,
+#faq h2 {
+    margin-bottom: 0; /* Optional: Adjust the spacing */
+}
+
