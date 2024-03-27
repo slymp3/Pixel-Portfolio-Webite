@@ -776,3 +776,7 @@ footer p {
 #faqContent {
   display: none;
 }
+/* Initially hide section content except for the About section */
+#gallery, #faq {
+  display: none;
+}
