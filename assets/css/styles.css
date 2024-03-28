@@ -735,7 +735,7 @@ footer p {
 /* Style for the clickable image container */
 #container {
   position: absolute; /* Position it absolutely */
-  top: 400px; /* Adjust top position as needed */
+  top: 444px; /* Adjust top position as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally */
   z-index: 9999; /* Ensure it appears on top of other content */
@@ -744,7 +744,7 @@ footer p {
 /* Style for the clickable image */
 #clickableImage img {
   display: block;
-  width: 1400px; /* Adjust width as needed */
+  width: 700px; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
