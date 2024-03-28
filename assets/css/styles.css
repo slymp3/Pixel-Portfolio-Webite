@@ -744,7 +744,7 @@ footer p {
 /* Style for the clickable image */
 #clickableImage img {
   display: block;
-  width: 700px; /* Adjust width as needed */
+  width: 500px; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
