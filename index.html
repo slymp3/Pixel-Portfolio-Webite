@@ -252,11 +252,11 @@ Description: This file contains all structure of my portfolio page
       <p>“You never truly quit RuneScape, you only go AFk.”</p>
     </div>
   </section>
-<!-- Footer section -->
-<footer>
-  <div class="footer-content">
-    <p>Join the RuneSprites community.</p>
-    <div class="mobile">
+
+  <!-- Footer section -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-text">Join the RuneSprites community.</p>
       <div class="social-mob">
         <a href="https://twitter.com/runesprites" target="_blank">
           <img src="assets/img/icons/X.png" alt="RuneSprites - Twitter">
@@ -266,15 +266,14 @@ Description: This file contains all structure of my portfolio page
         </a>
       </div>
     </div>
-  </div>
-  <div class="up-arrow floating-arrow">
-    <a href="#top">
-      <i class="fa fa-chevron-up" aria-hidden="true"></i>
-    </a>
-  </div>
-  <p>&copy; 2024 RuneSprites. All rights reserved.</p>
-  <!-- Additional footer content -->
-</footer>
+    <div class="up-arrow floating-arrow">
+      <a href="#top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      </a>
+    </div>
+    <p class="copyright">&copy; 2024 RuneSprites. All rights reserved.</p>
+  </footer>
+  
 
   
 <!-- External JavaScript -->
@@ -299,6 +298,14 @@ Description: This file contains all structure of my portfolio page
       document.querySelector('.swiper-button-prev').style.display = 'none';
       document.querySelector('.swiper-button-next').style.display = 'none';
     }
+
+    // Make gallery images clickable
+    var galleryImages = document.querySelectorAll('.gallery-item img');
+    galleryImages.forEach(function(image, index) {
+      image.addEventListener('click', function() {
+        gallerySwiper.slideTo(index + 1); // Slide to the clicked image (index + 1)
+      });
+    });
   });
 
   // Toggle section visibility
