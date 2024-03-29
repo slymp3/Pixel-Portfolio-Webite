@@ -216,7 +216,7 @@ footer {
 .social-mob {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* Adjust the margin as needed */
+  margin-top: 5px; /* Adjust the margin as needed */
 }
 
 .up-arrow a {
@@ -258,7 +258,7 @@ footer {
 
 .social-mob img:hover {
   transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Add glowing effect on hover */
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* Add glowing effect on hover */
   text-shadow: none; /* Remove existing text-shadow */
 }
 
