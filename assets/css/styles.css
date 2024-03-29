@@ -634,3 +634,15 @@ h2 {
   color: #fff;
   font-size: 24px;
 }
+
+/* Add these styles to prevent horizontal scrolling */
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Adjust gallery container to fit within viewport */
+.gallery-swiper-container {
+  max-width: 100%;
+  overflow: hidden; /* Hide any content that overflows */
+}
