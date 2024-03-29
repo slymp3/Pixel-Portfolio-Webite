@@ -627,7 +627,34 @@ h2 {
   font-size: 24px;
 }
 
-.footer-content {
-  text-align: center; /* Align the content in the center */
-  margin-bottom: 20px; /* Add some space between the content and other elements */
+/* Footer Styles */
+footer {
+  background-color: #4D5A7CFF; /* Slate Gray */
+  color: #FFFF00FF; /* Yellow */
+  padding: 20px;
+  text-align: center;
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.social-mob {
+  display: flex;
+  justify-content: center;
+}
+
+.up-arrow {
+  /* Styles for the floating arrow */
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
