@@ -646,3 +646,7 @@ body {
   max-width: 100%;
   overflow: hidden; /* Hide any content that overflows */
 }
+/* Add this rule to prevent horizontal scrolling on mobile */
+html, body {
+  overflow-x: hidden;
+}
