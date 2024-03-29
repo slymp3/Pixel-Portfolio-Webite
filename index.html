@@ -28,11 +28,17 @@ Description: This file contains all structure of my portfolio page
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/effects.css">
   <link rel="stylesheet" href="assets/css/retro.css">
-  
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
   
   <!-- Internal Styles -->
+
+  
+
   <style>
     footer p {
   color: #FFFF00FF !important; /* Yellow */
@@ -95,7 +101,15 @@ Description: This file contains all structure of my portfolio page
       padding: 20px;
       text-align: center;
     }
+
+      /* Adjust image size for desktop */
+  .gallery-item img {
+    max-width: 100%; /* Limit image width to container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
   </style>
+
 </head>
 <body>
   <div id="container">
@@ -113,7 +127,7 @@ Description: This file contains all structure of my portfolio page
     
   </section>
   
-
+<!-- About section -->
   <section id="about" class="fadeIn">
     <h2 class="heading" onclick="toggleSection('about')">About RuneSprites</h2>
     <div id="aboutContent">
@@ -124,6 +138,7 @@ Description: This file contains all structure of my portfolio page
   </div>
   </section>
 
+  <!-- Gallery section -->
   <section id="gallery" class="fadeIn">
     <h2 class="heading" onclick="toggleSection('gallery')">Gallery</h2>
     <div class="swiper-container gallery-swiper-container">
@@ -153,7 +168,7 @@ Description: This file contains all structure of my portfolio page
   </section>
   
   
-  
+  <!-- FAQ section -->
   <section id="faq" class="fadeIn">
     <h2 class="heading" onclick="toggleSection('faq')">Frequently Asked Questions (FAQ)</h2>
     <div id="faqContent">
@@ -200,7 +215,7 @@ Description: This file contains all structure of my portfolio page
       <p>“You never truly quit RuneScape, you only go AFk.”</p>
     </div>
   </section>
-
+<!-- Footer section -->
   <footer>
     <div class="mobile">
       <div class="social-mob">
@@ -221,10 +236,11 @@ Description: This file contains all structure of my portfolio page
     <!-- Additional footer content -->
   </footer>  
   
-  <!-- External JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
+    <!-- External JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+
   // Toggle section visibility
   function toggleSection(sectionId) {
     var content = document.getElementById(sectionId + 'Content');
@@ -232,49 +248,5 @@ Description: This file contains all structure of my portfolio page
   }
 </script>
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-
-<!-- Initialize Swiper -->
-<script>
-  $(document).ready(function() {
-    var gallerySwiper = new Swiper('.gallery-swiper-container', {
-      slidesPerView: 'auto', // Show as many slides as possible without cropping
-      spaceBetween: 10, // Adjust the space between slides
-      loop: true, // Enable loop mode
-      navigation: {
-        nextEl: '.swiper-button-next', // Next slide button selector
-        prevEl: '.swiper-button-prev', // Previous slide button selector
-      },
-    });
-  });
-</script>
-
-<section id="gallery" class="fadeIn">
-  <h2 class="heading" onclick="toggleSection('gallery')">Gallery</h2>
-  <div class="swiper-container gallery-swiper-container">
-    <div class="swiper-wrapper">
-      <!-- Add your images as swiper slides -->
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery1.png" alt="RuneSprites.com">
-      </div>
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery2.png" alt="RuneSprites.com">
-      </div>
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery3.png" alt="RuneSprites.com">
-      </div>
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery4.png" alt="RuneSprites.com">
-      </div>
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery5.png" alt="RuneSprites.com">
-      </div>
-      <!-- Add more images as needed -->
-    </div>
-    <!-- Navigation arrows -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</section>
+</body>
+</html>
