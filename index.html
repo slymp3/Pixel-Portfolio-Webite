@@ -126,26 +126,32 @@ Description: This file contains all structure of my portfolio page
 
   <section id="gallery" class="fadeIn">
     <h2 class="heading" onclick="toggleSection('gallery')">Gallery</h2>
-    <div id="galleryContent" class="gallery-grid">
-      <!-- Add your images here -->
-      <div class="gallery-item">
-        <img src="assets/img/RuneSpritesGallery1.png" alt="RuneSprites.com">
+    <div class="swiper-container gallery-swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Add your images as swiper slides -->
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery1.png" alt="RuneSprites.com">
+        </div>
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery2.png" alt="RuneSprites.com">
+        </div>
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery3.png" alt="RuneSprites.com">
+        </div>
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery4.png" alt="RuneSprites.com">
+        </div>
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery5.png" alt="RuneSprites.com">
+        </div>
+        <!-- Add more images as needed -->
       </div>
-      <div class="gallery-item">
-        <img src="assets/img/RuneSpritesGallery2.png" alt="RuneSprites.com">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/img/RuneSpritesGallery3.png" alt="RuneSprites.com">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/img/RuneSpritesGallery4.png" alt="RuneSprites.com">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/img/RuneSpritesGallery5.png" alt="RuneSprites.com">
-      </div>
-      <!-- Add more images as needed -->
+      <!-- Navigation arrows -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-  </section>  
+  </section>
+  
   
   
   <section id="faq" class="fadeIn">
@@ -216,35 +222,59 @@ Description: This file contains all structure of my portfolio page
   </footer>  
   
   <!-- External JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-  </script>
-  <script>
-// Toggle section visibility
-function toggleSection(sectionId) {
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // Toggle section visibility
+  function toggleSection(sectionId) {
     var content = document.getElementById(sectionId + 'Content');
     content.style.display = (content.style.display === 'none') ? 'block' : 'none';
-}
+  }
+</script>
 
-  </script>
-  // Open lightbox on image click
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('click', () => {
-    const imgSrc = item.querySelector('img').src;
-    const lightbox = document.createElement('div');
-    lightbox.classList.add('lightbox');
-    lightbox.innerHTML = `
-      <span class="lightbox-close">&times;</span>
-      <img src="${imgSrc}" alt="Gallery Image">
-    `;
-    document.body.appendChild(lightbox);
-    document.querySelector('.lightbox-close').addEventListener('click', () => {
-      lightbox.remove();
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+<!-- Initialize Swiper -->
+<script>
+  $(document).ready(function() {
+    var gallerySwiper = new Swiper('.gallery-swiper-container', {
+      slidesPerView: 'auto', // Show as many slides as possible without cropping
+      spaceBetween: 10, // Adjust the space between slides
+      loop: true, // Enable loop mode
+      navigation: {
+        nextEl: '.swiper-button-next', // Next slide button selector
+        prevEl: '.swiper-button-prev', // Previous slide button selector
+      },
     });
   });
-});
+</script>
 
-</body>
-</html>
-
-
-
+<section id="gallery" class="fadeIn">
+  <h2 class="heading" onclick="toggleSection('gallery')">Gallery</h2>
+  <div class="swiper-container gallery-swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Add your images as swiper slides -->
+      <div class="swiper-slide gallery-item">
+        <img src="assets/img/RuneSpritesGallery1.png" alt="RuneSprites.com">
+      </div>
+      <div class="swiper-slide gallery-item">
+        <img src="assets/img/RuneSpritesGallery2.png" alt="RuneSprites.com">
+      </div>
+      <div class="swiper-slide gallery-item">
+        <img src="assets/img/RuneSpritesGallery3.png" alt="RuneSprites.com">
+      </div>
+      <div class="swiper-slide gallery-item">
+        <img src="assets/img/RuneSpritesGallery4.png" alt="RuneSprites.com">
+      </div>
+      <div class="swiper-slide gallery-item">
+        <img src="assets/img/RuneSpritesGallery5.png" alt="RuneSprites.com">
+      </div>
+      <!-- Add more images as needed -->
+    </div>
+    <!-- Navigation arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
