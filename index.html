@@ -236,10 +236,21 @@ Description: This file contains all structure of my portfolio page
     <!-- Additional footer content -->
   </footer>  
   
-    <!-- External JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
+<!-- External JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var gallerySwiper = new Swiper('.gallery-swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
 
   // Toggle section visibility
   function toggleSection(sectionId) {
