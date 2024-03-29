@@ -261,10 +261,11 @@ footer {
   padding-right: 10px; /* Adjust padding as needed */
 }
 
-.social-mob .social-icon-container:hover {
+.social-mob img:hover {
   transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* Add glowing effect on hover */
 }
+
 
 
 /* Switch */
