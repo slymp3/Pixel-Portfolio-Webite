@@ -650,3 +650,17 @@ body {
 html, body {
   overflow-x: hidden;
 }
+/* Define the default styles for the gallery images */
+.gallery-item img {
+  max-width: 50%; /* Ensure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  /* Adjust the size of gallery images for mobile */
+  .gallery-item img {
+    max-width: 80%; /* Set the maximum width to 80% of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
