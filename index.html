@@ -128,6 +128,29 @@ Description: This file contains all structure of my portfolio page
       right: 10px;
     }
 
+    /* Center gallery content images */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust position of gallery navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
   
   </style>
 
