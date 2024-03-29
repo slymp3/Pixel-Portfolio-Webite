@@ -210,14 +210,13 @@ footer {
 }
 
 .footer-text {
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 
 .social-mob {
   display: flex;
   justify-content: center;
   margin-top: 2px; /* Adjust the margin as needed */
-  margin-bottom: 2px;
 }
 
 .up-arrow a {
@@ -237,14 +236,14 @@ footer {
 .social a {
   color: #74808a;
   font-size: 1.25em;
-  padding: 5px;
+  padding: 10px;
   display: inline-block;
 }
 
 .social-mob img {
   width: 1.8em;
   height: 1.8em;
-  padding-right: 10px;
+  padding-right: 0px;
 }
 
 .social-mob a {
