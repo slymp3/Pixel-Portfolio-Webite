@@ -126,12 +126,26 @@ Description: This file contains all structure of my portfolio page
 
   <section id="gallery" class="fadeIn">
     <h2 class="heading" onclick="toggleSection('gallery')">Gallery</h2>
-    <div id="galleryContent"> <!-- Changed from 'gallery-container' to 'galleryContent' -->
-      <!-- Add your image here -->
-      <img src="assets/img/social-share.png" alt="RuneSprites">
-      <!-- Add more images if needed -->
+    <div id="galleryContent" class="gallery-grid">
+      <!-- Add your images here -->
+      <div class="gallery-item">
+        <img src="assets/img/RuneSpritesGallery1.png" alt="RuneSprites.com">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/RuneSpritesGallery2.png" alt="RuneSprites.com">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/RuneSpritesGallery3.png" alt="RuneSprites.com">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/RuneSpritesGallery4.png" alt="RuneSprites.com">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/RuneSpritesGallery5.png" alt="RuneSprites.com">
+      </div>
+      <!-- Add more images as needed -->
     </div>
-  </section>
+  </section>  
   
   
   <section id="faq" class="fadeIn">
@@ -212,7 +226,23 @@ function toggleSection(sectionId) {
 }
 
   </script>
-  
+  // Open lightbox on image click
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const imgSrc = item.querySelector('img').src;
+    const lightbox = document.createElement('div');
+    lightbox.classList.add('lightbox');
+    lightbox.innerHTML = `
+      <span class="lightbox-close">&times;</span>
+      <img src="${imgSrc}" alt="Gallery Image">
+    `;
+    document.body.appendChild(lightbox);
+    document.querySelector('.lightbox-close').addEventListener('click', () => {
+      lightbox.remove();
+    });
+  });
+});
+
 </body>
 </html>
 
