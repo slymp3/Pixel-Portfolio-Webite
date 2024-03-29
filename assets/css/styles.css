@@ -807,6 +807,6 @@ h2 {
     height: auto; /* Maintains the aspect ratio of the image */
   }
   #clickableImage img {
-    content: url('assets/img/BUYNOW.png'); /* Change the path to your new image */
+    content: url('https://runesprites.com/assets/img/BUYNOW.png'); /* Change the path to your new image */
   }
 }
