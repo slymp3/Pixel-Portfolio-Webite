@@ -103,10 +103,31 @@ Description: This file contains all structure of my portfolio page
     }
 
       /* Adjust image size for desktop */
-  .gallery-item img {
-    max-width: 50%; /* Limit image width to container width */
-    height: auto; /* Maintain aspect ratio */
-  }
+    .gallery-item {
+      position: relative;
+    }
+
+    .gallery-item img {
+      max-width: 50%;
+      height: auto;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+    }
+
+    .swiper-button-next {
+      right: 10px;
+    }
+
   
   </style>
 
