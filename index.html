@@ -36,14 +36,11 @@ Description: This file contains all structure of my portfolio page
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
   
   <!-- Internal Styles -->
-
-  
-
   <style>
     footer p {
-  color: #FFFF00FF !important; /* Yellow */
-}
-
+      color: #FFFF00FF !important; /* Yellow */
+    }
+    
     /* Custom RuneSprite styles */
     /* Text color palette */
     body {
@@ -102,7 +99,7 @@ Description: This file contains all structure of my portfolio page
       text-align: center;
     }
 
-      /* Adjust image size for desktop */
+    /* Adjust image size for desktop */
     .gallery-item {
       position: relative;
     }
@@ -129,137 +126,98 @@ Description: This file contains all structure of my portfolio page
     }
 
     /* Center gallery content images */
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-/* Adjust position of gallery navigation arrows */
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10; /* Increase the z-index to ensure the arrows are on top of the images */
-}
+    /* Adjust position of gallery navigation arrows */
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10; /* Increase the z-index to ensure the arrows are on top of the images */
+    }
 
-.swiper-button-prev {
-  left: 10px;
-}
+    .swiper-button-prev {
+      left: 10px;
+    }
 
-.swiper-button-next {
-  right: 10px;
-}
-  
+    .swiper-button-next {
+      right: 10px;
+    }
   </style>
-
 </head>
 <body>
   <div id="container">
     <a href="https://twitter.com/runesprites" id="clickableImage" target="_blank">
-        <img src="assets/img/PurchaseRuneSprites.png" alt="Clickable Image">
+      <img src="assets/img/PurchaseRuneSprites.png" alt="Clickable Image">
     </a>
-</div>
+  </div>
 
   <header>
-    
     <!-- Navigation bar or logo -->
   </header>
 
   <section id="top" class="hero fadeIn">
-    
+    <!-- Content for the hero section -->
   </section>
   
-<!-- About section -->
+  <!-- About section -->
   <section id="about" class="fadeIn">
     <h2 class="heading" onclick="toggleSection('about')">About RuneSprites</h2>
     <div id="aboutContent">
       <!-- Content for the about section -->
-    <p>RuneSprites is a digital art collection comprising 2007 unique Ordinal NFTs inscribed on the Bitcoin blockchain. Inspired by the iconic game RuneScape, each RuneSprite reflects the nostalgic armor, items, and characters from its legacy.</p>
-    <p>Our mission is to immortalize RuneScape's essence through meticulously crafted sprite characters. Each RuneSprite is intricately woven into the Bitcoin blockchain, blending nostalgic charm with cutting-edge blockchain technology. This fusion offers collectors a timeless treasure with authenticity and permanence.</p>
-    <p>Every collectible features a distinct blend of backgrounds, colors, and items, making it a rare and coveted digital masterpiece. Powered by Bitcoin, RuneSprites evoke early 2000s video game nostalgia, appealing to RuneScape fans and digital art enthusiasts alike.</p>
-  </div>
+      <p>RuneSprites is a digital art collection comprising 2007 unique Ordinal NFTs inscribed on the Bitcoin blockchain. Inspired by the iconic game RuneScape, each RuneSprite reflects the nostalgic armor, items, and characters from its legacy.</p>
+      <p>Our mission is to immortalize RuneScape's essence through meticulously crafted sprite characters. Each RuneSprite is intricately woven into the Bitcoin blockchain, blending nostalgic charm with cutting-edge blockchain technology. This fusion offers collectors a timeless treasure with authenticity and permanence.</p>
+      <p>Every collectible features a distinct blend of backgrounds, colors, and items, making it a rare and coveted digital masterpiece. Powered by Bitcoin, RuneSprites evoke early 2000s video game nostalgia, appealing to RuneScape fans and digital art enthusiasts alike.</p>
+    </div>
   </section>
 
- <!-- Gallery section -->
-<section id="gallery" class="fadeIn">
-  <h2 class="heading" onclick="toggleSection('gallery')">Gallery</h2>
-  <div class="swiper-container gallery-swiper-container">
-    <div class="swiper-wrapper">
-      <!-- Add your images as swiper slides -->
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery1.jpg" alt="RuneSprites.com">
+  <!-- Gallery section -->
+  <section id="gallery" class="fadeIn">
+    <h2 class="heading" onclick="toggleSection('gallery')">Gallery</h2>
+    <div  class="swiper-container gallery-swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Add your images as swiper slides -->
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery1.jpg" alt="RuneSprites.com">
+        </div>
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery2.jpg" alt="RuneSprites.com">
+        </div>
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery3.jpg" alt="RuneSprites.com">
+        </div>
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery4.jpg" alt="RuneSprites.com">
+        </div>
+        <div class="swiper-slide gallery-item">
+          <img src="assets/img/RuneSpritesGallery5.jpg" alt="RuneSprites.com">
+        </div>
+        <!-- Add more images as needed -->
       </div>
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery2.jpg" alt="RuneSprites.com">
-      </div>
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery3.jpg" alt="RuneSprites.com">
-      </div>
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery4.jpg" alt="RuneSprites.com">
-      </div>
-      <div class="swiper-slide gallery-item">
-        <img src="assets/img/RuneSpritesGallery5.jpg" alt="RuneSprites.com">
-      </div>
-      <!-- Add more images as needed -->
+      <!-- Navigation arrows -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <!-- Navigation arrows -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</section>
-  
-  
+  </section>
+
   <!-- FAQ section -->
   <section id="faq" class="fadeIn">
     <h2 class="heading" onclick="toggleSection('faq')">Frequently Asked Questions (FAQ)</h2>
     <div id="faqContent">
-    <div class="faq-item">
-      <h3>What are RuneSprites?</h3>
-      <p>RuneSprites is a collection of RuneScape-inspired Ordinals inscriptions hosted on the Bitcoin blockchain. With a deep-rooted love for RuneScape, RuneSprites aims to immortalize its essence through meticulously crafted sprite characters. The collection contains 2007 randomly computer-generated RuneSprites.</p>
-    </div>
-    
-    <div class="faq-item">
-      <h3>Why did RuneSprites use the Bitcoin Ordinals protocol?</h3>
-      <p>RuneSprites utilizes the Bitcoin Ordinals protocol to mint NFTs directly onto the Bitcoin blockchain, providing each satoshi with a unique identity. This protocol ensures the authenticity and permanence of RuneSprites by embedding them directly into the Bitcoin blockchain, enhancing marketability and desirability.</p>
-      <p>The Ordinals protocol assigns unique IDs to each satoshi, recording them on the Bitcoin blockchain to verify authenticity and ensure the correct Bitcoin ordinal series. This process makes RuneSprites immutable and resistant to modification.</p>
-    </div>
-    
-    <div class="faq-item">
-      <h3>What is the cost to purchase RuneSprites?</h3>
-      <p>RuneSprites are available for purchase during the presale phase. Please visit our website for the current pricing tier and purchase options.</p>
-    </div>
-    
-    <div class="faq-item">
-      <h3>How do you get your hands on RuneSprites?</h3>
-      <p>RuneSprites can be purchased through the presale link on our website <a href="https://RuneSprites.com">RuneSprites.com</a>. Once all 2007 RuneSprites have been inscribed, they can be acquired from marketplaces such as MagicEden.</p>
-      <p>To purchase RuneSprites, follow these steps:</p>
-      <ol>
-        <li>Set up a Taproot-Enabled Bitcoin Wallet</li>
-        <li>Acquire Bitcoin</li>
-        <li>Purchase RuneSprites via the presale link on our website <a href="https://RuneSprites.com">RuneSprites.com</a></li>
-      </ol>
-    </div>
-    
-    <div class="faq-item">
-      <h3>How do I know which RuneSprites I got?</h3>
-      <p>During the presale, the specific RuneSprites you receive will be revealed on Friday, April 20th, 2024, at 20:07 UTC, or when all 2007 RuneSprites have been inscribed, whichever comes sooner.</p>
-    </div>
-    
-    <div class="faq-item">
-      <h3>Where can I sell my RuneSprites?</h3>
-      <p>RuneSprites can be freely transferred among Bitcoin Ordinals wallets. Once the project is fully inscribed, you can buy and sell RuneSprites on Ordinals marketplaces such as MagicEden or Ordinals Wallet. RuneSprites.com does not provide a marketplace for RuneSprites, and we have no control over users creating secondary markets for RuneSprites on third-party websites.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Disclaimer:</h3>
-      <p>RuneSprites is a fan-made, RuneScape-inspired pixel art NFT project that is hosted on the Bitcoin Blockchain. RuneSprites shares no affiliation with Jagex or RuneScape.</p>
-      <p>“You never truly quit RuneScape, you only go AFk.”</p>
+      <div class="faq-item">
+        <h3>What are RuneSprites?</h3>
+        <p>RuneSprites is a collection of RuneScape-inspired Ordinals inscriptions hosted on the Bitcoin blockchain. With a deep-rooted love for RuneScape, RuneSprites aims to immortalize its essence through meticulously crafted sprite characters. The collection contains 2007 randomly computer-generated RuneSprites.</p>
+      </div>
+      <!-- Add more FAQ items as needed -->
     </div>
   </section>
-<!-- Footer section -->
+
+  <!-- Footer section -->
   <footer>
     <div class="mobile">
       <div class="social-mob">
@@ -278,38 +236,37 @@ Description: This file contains all structure of my portfolio page
     </div>
     <p>&copy; 2024 RuneSprites. All rights reserved.</p>
     <!-- Additional footer content -->
-  </footer>  
-  
-<!-- External JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </footer>
 
-<!-- Updated Swiper JavaScript initialization -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var gallerySwiper = new Swiper('.gallery-swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 10,
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+  <!-- External JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Updated Swiper JavaScript initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var gallerySwiper = new Swiper('.gallery-swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      // Hide navigation arrows on mobile
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+        document.querySelector('.swiper-button-prev').style.display = 'none';
+        document.querySelector('.swiper-button-next').style.display = 'none';
+      }
     });
 
-    // Hide navigation arrows on mobile
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-      document.querySelector('.swiper-button-prev').style.display = 'none';
-      document.querySelector('.swiper-button-next').style.display = 'none';
+    // Toggle section visibility
+    function toggleSection(sectionId) {
+      var content = document.getElementById(sectionId + 'Content');
+      content.style.display = (content.style.display === 'none') ? 'block' : 'none';
     }
-  });
-
-  // Toggle section visibility
-  function toggleSection(sectionId) {
-    var content = document.getElementById(sectionId + 'Content');
-    content.style.display = (content.style.display === 'none') ? 'block' : 'none';
-  }
-</script>
-
+  </script>
 </body>
 </html>
