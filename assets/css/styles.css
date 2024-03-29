@@ -633,6 +633,9 @@ footer {
   color: #FFFF00FF; /* Yellow */
   padding: 20px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-content {
@@ -657,4 +660,3 @@ footer {
 .copyright {
   margin-top: 20px;
 }
-
