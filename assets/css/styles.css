@@ -796,3 +796,9 @@ h2 {
 #clickableImage:hover {
   filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.5)); /* Yellow glow */
 }
+
+@media screen and (max-width: 768px) {
+  #container {
+    padding: 10px; /* Adds padding around the container, effectively reducing the image size */
+  }
+}
