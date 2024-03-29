@@ -135,22 +135,16 @@ Description: This file contains all structure of my portfolio page
   align-items: center;
 }
 
-/* Adjust position of gallery navigation arrows */
+/* Remove navigation arrows */
 .swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10; /* Increase the z-index to ensure the arrows are on top of the images */
-}
+    .swiper-button-next {
+      display: none;
+    }
 
-.swiper-button-prev {
-  left: 10px;
-}
-
-.swiper-button-next {
-  right: 10px;
-}
+    /* Make gallery images clickable */
+    .gallery-item {
+      cursor: pointer;
+    }
   
   </style>
 
@@ -182,16 +176,15 @@ Description: This file contains all structure of my portfolio page
   </div>
   </section>
 
- <!-- Gallery section -->
-<section id="gallery" class="fadeIn">
+ <section id="gallery" class="fadeIn">
   <h2 class="heading" onclick="toggleSection('gallery')">Gallery</h2>
   <div class="swiper-container gallery-swiper-container">
     <div class="swiper-wrapper">
       <!-- Add your images as swiper slides -->
-      <div class="swiper-slide gallery-item">
+      <div class="swiper-slide gallery-item" onclick="gallerySwiper.slidePrev()">
         <img src="assets/img/RuneSpritesGallery1.jpg" alt="RuneSprites.com">
       </div>
-      <div class="swiper-slide gallery-item">
+      <div class="swiper-slide gallery-item" onclick="gallerySwiper.slideNext()">
         <img src="assets/img/RuneSpritesGallery2.jpg" alt="RuneSprites.com">
       </div>
       <div class="swiper-slide gallery-item">
