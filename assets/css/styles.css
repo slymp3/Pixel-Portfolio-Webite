@@ -797,6 +797,7 @@ h2 {
   filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.5)); /* Yellow glow */
 }
 
+/* For mobile devices with screen width up to 768px */
 @media screen and (max-width: 768px) {
   #container {
     padding: 10px; /* Adds padding around the container */
@@ -804,6 +805,7 @@ h2 {
   #clickableImage img {
     max-width: 100%; /* Ensures the image fills the width of its container */
     height: auto; /* Maintains the aspect ratio of the image */
+    content: url('assets/img/BUYNOW.png'); /* Change the path to your new image */
   }
 }
 
