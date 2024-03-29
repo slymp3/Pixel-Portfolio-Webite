@@ -191,11 +191,11 @@ padding-right: 11em;
 font-size: 1.3em;
 }
 
-/* Footer Styles */
+/* Adjusting the footer styles */
 footer {
   background-color: #4D5A7CFF; /* Slate Gray */
   color: #FFFF00FF; /* Yellow */
-  padding: 15px;
+  padding: 10px 20px; /* Adjust padding vertically and horizontally */
   text-align: center;
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -210,13 +210,13 @@ footer {
 }
 
 .footer-text {
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* Adjust margin-bottom */
 }
 
 .social-mob {
   display: flex;
   justify-content: center;
-  margin-top: 2px; /* Adjust the margin as needed */
+  margin-top: 5px; /* Adjust margin-top */
 }
 
 .up-arrow a {
@@ -230,7 +230,7 @@ footer {
 }
 
 .copyright {
-  padding-top: 5px;
+  padding-top: 5px; /* Adjust padding-top */
 }
 
 .social a {
@@ -243,7 +243,7 @@ footer {
 .social-mob img {
   width: 1.8em;
   height: 1.8em;
-  padding-right: 10px;
+  padding-right: 10px; /* Adjust padding-right */
 }
 
 .social-mob a {
@@ -258,13 +258,14 @@ footer {
 .social-mob img {
   width: 1.8em;
   height: 1.8em;
-  padding-right: 10px; /* Adjust padding as needed */
+  padding-right: 10px; /* Adjust padding-right */
 }
 
 .social-mob img:hover {
   transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* Add glowing effect on hover */
 }
+
 
 
 
