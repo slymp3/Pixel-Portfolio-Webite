@@ -664,3 +664,7 @@ html, body {
     height: auto; /* Maintain aspect ratio */
   }
 }
+
+.footer-text strong {
+  font-weight: bold;
+}
