@@ -805,7 +805,8 @@ h2 {
   #clickableImage img {
     max-width: 100%; /* Ensures the image fills the width of its container */
     height: auto; /* Maintains the aspect ratio of the image */
+  }
+  #clickableImage img {
     content: url('assets/img/BUYNOW.png'); /* Change the path to your new image */
   }
 }
-
