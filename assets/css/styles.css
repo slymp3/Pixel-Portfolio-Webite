@@ -799,6 +799,11 @@ h2 {
 
 @media screen and (max-width: 768px) {
   #container {
-    padding: 10px; /* Adds padding around the container, effectively reducing the image size */
+    padding: 10px; /* Adds padding around the container */
+  }
+  #clickableImage img {
+    max-width: 100%; /* Ensures the image fills the width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
   }
 }
+
