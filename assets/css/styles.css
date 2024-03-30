@@ -195,28 +195,27 @@ font-size: 1.3em;
 footer {
   background-color: #4D5A7CFF; /* Slate Gray */
   color: #FFFF00FF; /* Yellow */
-  padding: 10px 20px; /* Adjust padding vertically and horizontally */
+  padding: 20px; /* Adjust padding */
   text-align: center;
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 300;
+  position: relative; /* Position relative for absolute positioning of the background image */
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative; /* Position relative for absolute positioning of the background image */
 }
 
 .footer-text {
-  margin-bottom: 5px; /* Adjust margin-bottom */
+  margin-bottom: 10px; /* Adjust margin-bottom */
 }
 
 .social-mob {
   display: flex;
   justify-content: center;
-  margin-top: 5px; /* Adjust margin-top */
+  margin-top: 2px; /* Adjust margin-top */
 }
 
 .up-arrow a {
@@ -230,7 +229,7 @@ footer {
 }
 
 .copyright {
-  padding-top: 5px; /* Adjust padding-top */
+  padding-top: 20px; /* Adjust padding-top */
 }
 
 .social a {
@@ -265,6 +264,30 @@ footer {
   transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* Add glowing effect on hover */
 }
+
+/* Add your custom footer background image */
+footer {
+  background-image: url('https://RuneSprites.com/assets/img/og-image.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px; /* Adjust padding as needed */
+}
+
 
 
 
