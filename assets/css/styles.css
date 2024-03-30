@@ -583,7 +583,7 @@ h2 {
     height: auto; /* Maintains the aspect ratio of the image */
   }
   #clickableImage img {
-    content: url('https://runesprites.com/assets/img/BUYNOW.webp'); /* Change the path to your new image */
+    content: url('https://runesprites.com/assets/img/Presale.webp'); /* Change the path to your new image */
   }
 }
 
