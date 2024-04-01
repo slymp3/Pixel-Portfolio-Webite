@@ -668,3 +668,10 @@ html, body {
 .footer-text strong {
   font-weight: bold;
 }
+
+/* styles.css */
+
+.twitter-timeline-container {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  margin: 20px auto; /* Adjust margin as needed for spacing */
+}
