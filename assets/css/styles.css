@@ -675,18 +675,3 @@ html, body {
   max-width: 100%; /* Adjust the maximum width as needed */
   margin: 20px auto; /* Adjust margin as needed for spacing */
 }
-
-/* Hide the popup by default */
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 15px;
-}
-
-/* Style the link to show pointer cursor on hover */
-#ordinalLink {
-  cursor: pointer;
-}
