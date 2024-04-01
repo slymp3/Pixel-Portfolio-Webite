@@ -225,6 +225,12 @@ Description: This file contains all structure of my portfolio page
       <p>Ordinal inscriptions are non-fungible, unique NFT-like tokens on the Bitcoin network that feature custom data, such as images, text, or video, inscribed onto them. Each satoshi is assigned a serial number based on the order in which it was mined, and these numbers are called ordinals.</p>
       <p>The Ordinals protocol assigns extra information to the serial numbers of each satoshi, which is called an inscription. Ordinal inscriptions are embedded directly into individual satoshis and stored in Bitcoin blocks.</p>
       <p>Learn more about the Ordinals protocol <a href="https://docs.ordinals.com/">here</a></p>
+      <!-- Define a link with a unique ID -->
+  <a id="ordinalLink" href="https://your-ordinals-protocol-link.com">Learn more about the Ordinals protocol</a>
+
+  <!-- Create a hidden div to display the preview popup -->
+  <div id="ordinalPopup" class="popup">Popup preview content goes here</div>
+</div>
     </div>
     
     <div class="faq-item">
@@ -326,5 +332,23 @@ Description: This file contains all structure of my portfolio page
   }
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the link element
+    var link = document.getElementById("ordinalLink");
+
+    // Function to open the link in a new tab or window when clicked
+    link.addEventListener("click", function(event) {
+      // Prevent the default link behavior
+      event.preventDefault();
+
+      // Get the link URL
+      var url = link.getAttribute("href");
+
+      // Open the link in a new tab or window
+      window.open(url, "_blank");
+    });
+  });
+</script>
 </body>
 </html>
