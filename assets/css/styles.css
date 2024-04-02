@@ -682,9 +682,9 @@ html, body {
   background-color: #5865F2; /* Discord brand color */
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 16px; /* Adjust based on your design */
+  padding: 5px 7.5px;
+  border-radius: 3px;
+  font-size: 12px; /* Adjust based on your design */
   display: inline-block; /* Align with the Twitter button */
 }
 
