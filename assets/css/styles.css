@@ -669,8 +669,25 @@ html, body {
   font-weight: bold;
 }
 
-/* twitter follow button */
-.twitter-follow-button-container {
-  text-align: center; /* Center the button horizontally */
-  margin-top: 20px; /* Add some space at the top, optional */
+/* Twitter +Discord join/follow button About section*/
+.social-buttons-container {
+  text-align: center; /* Center the buttons container */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the space between buttons */
+}
+
+.discord-join-button {
+  background-color: #5865F2; /* Discord brand color */
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust based on your design */
+  display: inline-block; /* Align with the Twitter button */
+}
+
+.discord-join-button:hover {
+  background-color: #4e5d94; /* Darker shade for hover effect */
 }
