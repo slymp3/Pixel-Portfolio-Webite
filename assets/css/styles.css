@@ -669,9 +669,8 @@ html, body {
   font-weight: bold;
 }
 
-/* styles.css */
-
-.twitter-timeline-container {
-  max-width: 100%; /* Adjust the maximum width as needed */
-  margin: 20px auto; /* Adjust margin as needed for spacing */
+/* twitter follow button */
+.twitter-follow-button-container {
+  text-align: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add some space at the top, optional */
 }
